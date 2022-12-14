@@ -1,0 +1,102 @@
+
+/*=============================================
+=            testimonial slider            =
+=============================================*/
+
+.testimonial-slider-area-bg{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.testimonial-slider{
+
+    &__container-area{
+        position: relative;
+        .swiper-pagination{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+
+            @media #{$large-mobile}{
+                position: static;
+                transform: none;
+                margin-top: 30px;
+            }
+            &-bullet{
+                display: block;
+                margin-bottom: 10px;
+                background-color: $white;
+                opacity: 1;
+
+                @media #{$large-mobile}{
+                    display: inline-block;
+                    margin-bottom: 0;
+                }
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &-active{
+                    background-color: $theme-color--default;
+                }
+            }
+        }
+    }
+
+    &__container{
+        width: 800px;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    &__single-slide{
+        color: $white;
+        .author{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            &__image{
+                flex-basis: 100px;
+                margin-right: 30px;
+                width: 100px;
+                height: 100px;
+                img{
+                    border-radius: 50%;
+                }
+            }
+            
+            &__details{
+                flex-basis: calc(100% - 100px);
+                .name{
+                    font-size: 18px;
+                    color: $white;
+                    font-weight: 400;
+                }
+
+                .designation{
+                    font-size: 16px;
+                    font-family: $poppins;
+                }
+            }
+        }
+
+        .content{
+            font-size: 24px;
+            line-height: 1.5;
+            font-style: italic;
+            font-weight: 300;
+
+            @media #{$large-mobile}{
+                font-size: 20px;
+            }
+
+            @media #{$extra-small-mobile}{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+/*=====  End of testimonial slider  ======*/
+
