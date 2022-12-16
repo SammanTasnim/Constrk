@@ -1,5 +1,5 @@
 # Constrk
 This repo bringing to you a WP theme. Based on companies.
 
-Theme owner : Samman Tasnim
-Template owner : Unknown
+1. Theme owner : Samman Tasnim
+2. Template owner : Unknown
