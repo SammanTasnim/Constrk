@@ -1,2 +1,2 @@
-# Constrk
+# Constrk-Wordpress theme
 
